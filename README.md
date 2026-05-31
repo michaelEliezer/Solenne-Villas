@@ -5,7 +5,7 @@ The project was built as a cinematic editorial landing page using full-screen im
 
 ## Live Site
 
-Coming soon: `https://michaeleliezer.github.io/solenne-villas/`
+ https://michaeleliezer.github.io/Solenne-Villas/
 
 ## Project Purpose
 
