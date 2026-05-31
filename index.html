@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLENNE VILLAS — Private Mediterranean Retreat</title>
+  <meta name="description" content="A secluded collection of stone villas shaped by sea light, quiet architecture, and slow Mediterranean living.">
+  <meta name="theme-color" content="#0a0806">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <noscript>
+    <style>
+      .intro-overlay { display: none !important; }
+      .main-site { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .hero-slide { opacity: 0 !important; }
+      .hero-slide:first-child { opacity: 1 !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- CINEMATIC INTRO                              -->
+  <!-- ============================================ -->
+  <div class="intro-overlay" id="introOverlay">
+    <div class="intro-inner">
+      <h1 class="intro-brand">SOLENNE VILLAS</h1>
+      <p class="intro-sub">Private Mediterranean Retreat</p>
+    </div>
+    <button class="intro-skip" id="introSkip" aria-label="Skip intro">Enter</button>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- MAIN SITE                                    -->
+  <!-- ============================================ -->
+  <div class="main-site" id="mainSite">
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION                                   -->
+    <!-- ============================================ -->
+    <nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo">SOLENNE</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Retreat</a></li>
+        <li><a href="#villas">Villas</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#inquiry">Inquiry</a></li>
+      </ul>
+      <a href="#inquiry" class="nav-cta">Reserve Stay</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <a href="#hero" class="mobile-link">Retreat</a>
+        <a href="#villas" class="mobile-link">Villas</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#gallery" class="mobile-link">Gallery</a>
+        <a href="#inquiry" class="mobile-link">Inquiry</a>
+        <a href="#inquiry" class="mobile-cta">Reserve Stay</a>
+      </div>
+    </div>
+
+    <main>
+
+      <!-- ============================================ -->
+      <!-- HERO / CINEMATIC SLIDESHOW                  -->
+      <!-- ============================================ -->
+      <section class="hero" id="hero">
+        <div class="hero-slideshow">
+          <div class="hero-slide active" aria-hidden="false">
+            <div class="hero-image" style="background-image:url('assets/images/aerial-coastal-retreat.jpg')" role="img" aria-label="Aerial view of Solenne Villas coastal retreat"></div>
+          </div>
+          <div class="hero-slide" aria-hidden="true">
+            <div class="hero-image" style="background-image:url('assets/images/pool-terrace-blue-hour.jpg')" role="img" aria-label="Pool terrace at blue hour"></div>
+          </div>
+          <div class="hero-slide" aria-hidden="true">
+            <div class="hero-image" style="background-image:url('assets/images/architectural-detail-archway.jpg')" role="img" aria-label="Architectural detail of villa archway"></div>
+          </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Private Mediterranean Retreat</p>
+          <h1 class="hero-title">Where the Coast<br>Becomes Still</h1>
+          <p class="hero-desc">A secluded collection of stone villas shaped by sea light, quiet architecture, and slow Mediterranean living.</p>
+          <div class="hero-actions">
+            <a href="#experience" class="btn-primary">Explore the Retreat</a>
+            <a href="#inquiry" class="btn-ghost">Make an Inquiry</a>
+          </div>
+        </div>
+        <div class="hero-controls">
+          <div class="hero-dots" role="tablist" aria-label="Slide indicators">
+            <button class="hero-dot active" data-slide="0" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+            <button class="hero-dot" data-slide="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+            <button class="hero-dot" data-slide="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+          </div>
+          <button class="hero-toggle" id="heroToggle" aria-label="Pause slideshow">
+            <span class="toggle-pause" aria-hidden="true">&#10074;&#10074;</span>
+            <span class="toggle-play" aria-hidden="true">&#9654;</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- EDITORIAL CHAPTERS                          -->
+      <!-- ============================================ -->
+
+      <!-- Chapter 1: The Arrival -->
+      <section class="chapter" id="chapter-arrival">
+        <div class="chapter-bg" style="background-image:url('assets/images/architectural-detail-archway.jpg')" role="img" aria-label="Architectural archway detail"></div>
+        <div class="chapter-content">
+          <p class="chapter-label">Chapter One</p>
+          <h2>The Arrival</h2>
+          <p>A quiet entrance of limestone, olive shadows, and sea air.</p>
+        </div>
+      </section>
+
+      <!-- Chapter 2: The Villa -->
+      <section class="chapter" id="chapter-villa">
+        <div class="chapter-bg" style="background-image:url('assets/images/open-lounge-villa.jpg')" role="img" aria-label="Open lounge villa interior"></div>
+        <div class="chapter-content">
+          <p class="chapter-label">Chapter Two</p>
+          <h2>The Villa</h2>
+          <p>Open interiors designed around sunlight, privacy, and the horizon.</p>
+        </div>
+      </section>
+
+      <!-- Chapter 3: The Water -->
+      <section class="chapter" id="chapter-water">
+        <div class="chapter-bg" style="background-image:url('assets/images/pool-terrace-blue-hour.jpg')" role="img" aria-label="Pool terrace at blue hour"></div>
+        <div class="chapter-content">
+          <p class="chapter-label">Chapter Three</p>
+          <h2>The Water</h2>
+          <p>An infinity pool terrace made for slow mornings and blue-hour evenings.</p>
+        </div>
+      </section>
+
+      <!-- Chapter 4: The Ritual -->
+      <section class="chapter" id="chapter-ritual">
+        <div class="chapter-bg" style="background-image:url('assets/images/spa-bathroom-detail.jpg')" role="img" aria-label="Spa bathroom detail"></div>
+        <div class="chapter-content">
+          <p class="chapter-label">Chapter Four</p>
+          <h2>The Ritual</h2>
+          <p>Stone, water, warmth, and silence — the private rhythm of retreat.</p>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- VILLAS / SUITES                             -->
+      <!-- ============================================ -->
+      <section class="section section--villas" id="villas">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-label">The Villas</p>
+            <h2 class="section-title">Private <em>Residences</em></h2>
+          </div>
+          <div class="villas-grid">
+            <div class="villa-card reveal">
+              <div class="villa-image">
+                <img src="assets/images/master-bedroom-ocean-view.jpg" alt="Cliff House master bedroom with ocean view" width="600" height="400" loading="lazy">
+              </div>
+              <div class="villa-content">
+                <p class="villa-type">Best for: Couples</p>
+                <h3>Cliff House</h3>
+                <p class="villa-features">Sea-facing terrace · Private pool · Outdoor dining</p>
+              </div>
+            </div>
+            <div class="villa-card reveal reveal-delay-1">
+              <div class="villa-image">
+                <img src="assets/images/outdoor-dining-terrace.jpg" alt="Olive Residence outdoor dining terrace" width="600" height="400" loading="lazy">
+              </div>
+              <div class="villa-content">
+                <p class="villa-type">Best for: Families</p>
+                <h3>Olive Residence</h3>
+                <p class="villa-features">Two suites · Shaded courtyard · Open lounge</p>
+              </div>
+            </div>
+            <div class="villa-card reveal reveal-delay-2">
+              <div class="villa-image">
+                <img src="assets/images/open-lounge-villa.jpg" alt="The Horizon Villa panoramic lounge" width="600" height="400" loading="lazy">
+              </div>
+              <div class="villa-content">
+                <p class="villa-type">Best for: Private stays</p>
+                <h3>The Horizon Villa</h3>
+                <p class="villa-features">Panoramic pool · Spa bathroom · Sunset deck</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- EXPERIENCE SECTION                           -->
+      <!-- ============================================ -->
+      <section class="section section--dark" id="experience">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-label">Experience</p>
+            <h2 class="section-title">Designed for Slow <em>Mediterranean Living</em></h2>
+          </div>
+          <div class="experience-grid">
+            <div class="exp-item reveal">
+              <div class="exp-image">
+                <img src="assets/images/pool-terrace-blue-hour.jpg" alt="Private sea-view terrace at blue hour" width="500" height="350" loading="lazy">
+              </div>
+              <h3>Sea-View Terraces</h3>
+              <p>Private outdoor spaces designed around sunrise coffee and sunset stillness.</p>
+            </div>
+            <div class="exp-item reveal reveal-delay-1">
+              <div class="exp-image">
+                <img src="assets/images/outdoor-dining-terrace.jpg" alt="Outdoor dining terrace" width="500" height="350" loading="lazy">
+              </div>
+              <h3>Outdoor Dining</h3>
+              <p>Chef-prepared meals served under open skies, surrounded by olive and citrus.</p>
+            </div>
+            <div class="exp-item reveal reveal-delay-2">
+              <div class="exp-image">
+                <img src="assets/images/spa-bathroom-detail.jpg" alt="Spa-inspired bathroom with stone and water" width="500" height="350" loading="lazy">
+              </div>
+              <h3>Spa Rituals</h3>
+              <p>Stone, water, warmth, and silence — the private rhythm of retreat.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- GALLERY SECTION                              -->
+      <!-- ============================================ -->
+      <section class="section" id="gallery">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-label">Gallery</p>
+            <h2 class="section-title">A Closer <em>Look</em></h2>
+          </div>
+          <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item gallery-item--wide reveal" data-full="assets/images/aerial-coastal-retreat.jpg" role="button" tabindex="0" aria-label="View aerial coastal retreat">
+              <img src="assets/images/aerial-coastal-retreat.jpg" alt="Aerial view of Solenne Villas" width="800" height="500" loading="lazy">
+            </div>
+            <div class="gallery-item reveal reveal-delay-1" data-full="assets/images/pool-terrace-blue-hour.jpg" role="button" tabindex="0" aria-label="View pool terrace at blue hour">
+              <img src="assets/images/pool-terrace-blue-hour.jpg" alt="Pool terrace at blue hour" width="500" height="600" loading="lazy">
+            </div>
+            <div class="gallery-item reveal" data-full="assets/images/architectural-detail-archway.jpg" role="button" tabindex="0" aria-label="View architectural archway detail">
+              <img src="assets/images/architectural-detail-archway.jpg" alt="Architectural archway detail" width="500" height="600" loading="lazy">
+            </div>
+            <div class="gallery-item reveal reveal-delay-2" data-full="assets/images/master-bedroom-ocean-view.jpg" role="button" tabindex="0" aria-label="View master bedroom with ocean view">
+              <img src="assets/images/master-bedroom-ocean-view.jpg" alt="Master bedroom with ocean view" width="500" height="400" loading="lazy">
+            </div>
+            <div class="gallery-item reveal reveal-delay-1" data-full="assets/images/open-lounge-villa.jpg" role="button" tabindex="0" aria-label="View open lounge villa interior">
+              <img src="assets/images/open-lounge-villa.jpg" alt="Open lounge villa interior" width="500" height="400" loading="lazy">
+            </div>
+            <div class="gallery-item reveal reveal-delay-3" data-full="assets/images/spa-bathroom-detail.jpg" role="button" tabindex="0" aria-label="View spa bathroom detail">
+              <img src="assets/images/spa-bathroom-detail.jpg" alt="Spa bathroom detail" width="500" height="400" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- INQUIRY / BOOKING FORM                      -->
+      <!-- ============================================ -->
+      <section class="section section--dark" id="inquiry">
+        <div class="container">
+          <div class="inquiry-layout">
+            <div class="inquiry-info">
+              <p class="section-label">Reserve</p>
+              <h2 class="section-title">Begin Your <em>Stay</em></h2>
+              <p class="inquiry-desc">
+                Tell us about your preferred dates, group size, and which villa interests you. We will respond within one business day with availability and next steps.
+              </p>
+              <div class="inquiry-detail">
+                <span class="detail-label">Email</span>
+                <a href="mailto:stay@solennevillas.com">stay@solennevillas.com</a>
+              </div>
+              <div class="inquiry-detail">
+                <span class="detail-label">Response</span>
+                <span>Within 1 business day</span>
+              </div>
+            </div>
+            <form class="inquiry-form" id="inquiryForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="inqName">Name</label>
+                  <input type="text" id="inqName" name="name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="inqEmail">Email</label>
+                  <input type="email" id="inqEmail" name="email" placeholder="you@email.com" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="inqDates">Preferred Dates</label>
+                  <input type="text" id="inqDates" name="dates" placeholder="e.g. June 15–22, 2026">
+                </div>
+                <div class="form-group">
+                  <label for="inqGuests">Guests</label>
+                  <select id="inqGuests" name="guests">
+                    <option value="">Select</option>
+                    <option value="1">1 guest</option>
+                    <option value="2">2 guests</option>
+                    <option value="3–4">3–4 guests</option>
+                    <option value="5+">5+ guests</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inqVilla">Villa Preference</label>
+                <select id="inqVilla" name="villa">
+                  <option value="">Select villa</option>
+                  <option value="cliff">Cliff House</option>
+                  <option value="olive">Olive Residence</option>
+                  <option value="horizon">The Horizon Villa</option>
+                  <option value="undecided">Undecided</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="inqMessage">Message</label>
+                <textarea id="inqMessage" name="message" rows="4" placeholder="Tell us about your stay, any special requirements, or questions..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary btn-full">Send Inquiry</button>
+              <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ============================================ -->
+    <!-- LIGHTBOX (hidden by default)                  -->
+    <!-- ============================================ -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <img class="lightbox-image" id="lightboxImage" src="" alt="">
+    </div>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-inner">
+          <div class="footer-brand">
+            <a href="#hero" class="footer-logo">SOLENNE VILLAS</a>
+            <p>Private Mediterranean Retreat</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Explore</h4>
+              <a href="#villas">Villas</a>
+              <a href="#experience">Experience</a>
+              <a href="#gallery">Gallery</a>
+            </div>
+            <div class="footer-col">
+              <h4>Connect</h4>
+              <a href="#inquiry">Inquiry</a>
+              <a href="#" class="footer-soon" data-soon="instagram">Instagram</a>
+              <a href="#" class="footer-soon" data-soon="pinterest">Pinterest</a>
+            </div>
+            <div class="footer-col">
+              <h4>Legal</h4>
+              <a href="#" class="footer-soon" data-soon="privacy">Privacy</a>
+              <a href="#" class="footer-soon" data-soon="terms">Terms</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Solenne Villas. All rights reserved.</span>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- /.main-site -->
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
